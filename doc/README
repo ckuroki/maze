@@ -1,0 +1,23 @@
+Maze:
+----
+A React/Redux old school Maze game.
+
+Implementation:
+
+$ create-react-app maze
+$ npm install redux
+$ npm install react-redux
+// Copy store,constants and reducers folders
+$ npm install redux-immutable-state-invariant
+
+
+Redux State:
+
+Map: Current Map.
+Screen: Current Screen
+Position: Current position in screen
+
+<Screen/> 
+<Item/> (Stateless Component)
+<Hero/> 
+
