@@ -1,7 +1,7 @@
 import * as types from '../constants/ActionTypes';
 
 const initialState = {
-  screen: 1,
+  screen: 18,
   x: 100,
   y: 100,
   life: 100

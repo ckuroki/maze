@@ -1,7 +1,7 @@
 import * as types from '../constants/ActionTypes';
 
 const initialState = {
-  id: 1
+  id: 18
 };
 
 export default function (state = initialState, action) {
