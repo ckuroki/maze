@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Background from './Background';
 //import * as mapUtils from '../utils/map';
 
@@ -26,7 +26,9 @@ export default class Maze extends Component {
 
   render() {
   return (
+    <div className="pa2">
       <Background type="room"/>
+    </div>
     );
   }
 }

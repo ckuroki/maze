@@ -23,6 +23,7 @@ export default function configureStore(initialState) {
     );
   }
 
+/*
 function observeStore(store, select, onChange) {
 let currentState;
 
@@ -38,25 +39,10 @@ let unsubscribe = store.subscribe(handleChange);
 handleChange();
 return unsubscribe;
 }
+*/
 
-observeStore(store, (x) => x, function(curr, next){
-  // Observe Login 
-  if ( curr && (!curr.auth.isAuthenticated) && (next.auth.isAuthenticated) ) {
-   // hashHistory.push(next.auth.afterRoute);
-   console.log(next.auth.afterRoute);
-  }
-  // Observe Logout 
-  if ( curr && (curr.auth.isAuthenticated) && (!next.auth.isAuthenticated) ) {
-//   hashHistory.push(`/login/${encodeURIComponent('/')}`);
-    console.log(`/login/${encodeURIComponent('/')}`);
-  }
-  
-  // Observe Test Finish
-//  if (curr && (!curr.isTestFinished) && (next.isTestFinished) ) {
-//    hashHistory.push('/results');
-//  }
- 
-});
+//observeStore(store, (x) => x, function(curr, next){
+//});
 
 return store;
 }
